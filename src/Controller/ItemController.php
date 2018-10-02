@@ -1,7 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: wilder15
- * Date: 02/10/18
- * Time: 11:20
- */
+// src/Controller/ItemController.php
+require __DIR__ . '/../Model/ItemManager.php';
+
+$items = selectAllItems();
+
+require __DIR__ . '/../View/item.php';
+?>
