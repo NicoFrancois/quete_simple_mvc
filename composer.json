@@ -1,0 +1,17 @@
+{
+    "name": "wilder15/quete_simple_mvc",
+    "description": "projet quete MVC2",
+    "authors": [
+        {
+            "name": "Nico FRANCOIS",
+            "email": "nfrancois45@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}
