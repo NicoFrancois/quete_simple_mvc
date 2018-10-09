@@ -1,11 +1,11 @@
 <?php
 
 namespace Model;
-
+require __DIR__ . '/../../app/db.php';
 class ItemManager
 {
 // src/Model/ItemManager.php
-require __DIR__ . '/../../app/db.php';
+
 
 // récupération de tous les items
     public function selectAllItems(): array
