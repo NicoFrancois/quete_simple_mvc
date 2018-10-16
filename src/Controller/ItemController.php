@@ -1,21 +1,17 @@
 <?php
 namespace Controller;
-
-
 use Model\ItemManager;
+use View\View;
 
 class ItemController
 {
-
-// src/Controller/ItemController.php
-//require __DIR__ . '/../Model/ItemManager.php';
-
-
     public function index()
     {
-        $itemManager = new ItemManager;
-        $items = $itemManager-> selectAllItems();
-        require __DIR__ . '/../View/item.php';
+        $itemManager = new ItemManager();
+        $items = $itemManager->selectAllItems();
+
+        $view = new View();
+        return $view->render(__DIR__ . '/../View/item.php', ['items'=> $items]);
     }
 
     public function show(int $id)
@@ -27,3 +23,6 @@ class ItemController
     }
 }
 ?>
+<?php
+
+
